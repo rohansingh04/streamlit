@@ -1,0 +1,289 @@
+[
+  {
+    "version": 0,
+    "tags": [],
+    "shapes": [],
+    "tracks": [
+      {
+        "frame": 640,
+        "group": 0,
+        "source": "manual",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              355.6218494356508, 161.39299409823434, 463.0845357903672,
+              226.26861586052837
+            ],
+            "frame": 640,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              336.1000000000022, 153.40000000000146, 463.08377838134766,
+              226.27014923095703
+            ],
+            "frame": 670,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              336.10125000000045, 91.96000000000203, 501.89675567627125,
+              202.69402618408202
+            ],
+            "frame": 710,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              289.13671875, 61.080078125, 548.2000000000007, 181.2800735473611
+            ],
+            "frame": 730,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [270.828125, 20.08203125, 596.0, 188.8000000000029],
+            "frame": 740,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": true,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [266.0517578125, 10.041015625, 621.25, 161.5500000000029],
+            "frame": 750,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": true,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [261.275390625, 0.0, 646.5, 134.3000000000029],
+            "frame": 760,
+            "attributes": []
+          }
+        ],
+        "attributes": [
+          { "value": "TFB", "name": "code" },
+          { "value": "Tap", "name": "group" },
+          { "value": "False", "name": "is_key" },
+          { "value": "False", "name": "is_continuous" }
+        ],
+        "label": "label"
+      },
+      {
+        "frame": 820,
+        "group": 0,
+        "source": "manual",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              267.45269528225253, 7.591999278567528, 701.6815501452038,
+              205.4029441611383
+            ],
+            "frame": 820,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              312.80078125, 88.38671875, 685.4000000000015, 297.7000000000007
+            ],
+            "frame": 835,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              180.263671875, 136.146484375, 552.86328125, 345.458984375
+            ],
+            "frame": 845,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              183.048828125, 146.892578125, 555.6484375, 356.205078125
+            ],
+            "frame": 855,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              264.244140625, 144.50390625, 687.8347656250007, 353.81640625
+            ],
+            "frame": 885,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              282.552734375, 139.330078125, 706.1433593750007, 348.642578125
+            ],
+            "frame": 895,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              348.2000000000007, 69.283203125, 696.9890747070312, 278.595703125
+            ],
+            "frame": 905,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              235.205078125, 36.248046875, 696.193359375, 245.560546875
+            ],
+            "frame": 915,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              166.349609375, 11.96875, 687.8000000000029, 215.3000000000029
+            ],
+            "frame": 925,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              26.646484375, 69.6796875, 688.6000000000022, 275.8000000000029
+            ],
+            "frame": 945,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              46.546875, 93.95703125, 708.5003906250022, 300.0773437500029
+            ],
+            "frame": 955,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              228.80078125, 183.5, 710.4957458496065, 310.02928161621094
+            ],
+            "frame": 1375,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": false,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              222.80078125, 126.30000000000291, 710.4971801757783,
+              310.0303955078125
+            ],
+            "frame": 1788,
+            "attributes": []
+          },
+          {
+            "type": "rectangle",
+            "occluded": false,
+            "outside": true,
+            "z_order": 0,
+            "rotation": 0.0,
+            "points": [
+              26.599609375, 112.30000000000291, 710.4953369140603,
+              310.03123474121094
+            ],
+            "frame": 1798,
+            "attributes": []
+          }
+        ],
+        "attributes": [
+          { "value": "False", "name": "is_continuous" },
+          { "value": "CL", "name": "code" },
+          { "value": "Crack", "name": "group" },
+          { "value": "False", "name": "is_key" }
+        ],
+        "label": "label"
+      }
+    ]
+  }
+]

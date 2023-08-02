@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Streamlit Video Player</title>
+</head>
+<body>
+    <h1>Streamlit Video Player</h1>
+    <div>
+        <video id="videoPlayer" controls width="800" height="600">
+            <source src="{{ url_for('static', filename=video_file) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <canvas id="boundingBoxCanvas" width="800" height="600" style="position: absolute; top: 0; left: 0;"></canvas>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streamlit Video Player</title>
+</head>
+<body>
+    <h1>Streamlit Video Player</h1>
+    <div>
+        <video id="videoPlayer" controls width="800" height="600">
+            <source src="{{ url_for('static', filename=video_file) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <canvas id="boundingBoxCanvas" width="800" height="600" style="position: absolute; top: 0; left: 0;"></canvas>
+    </div>
+    <script>
+        // Load the annotations data passed from Flask
+        var annotations = {{ annotations_data | tojson }};
+
+        // Function to draw the bounding boxes on the canvas
+        function drawBoundingBoxes(frameNumber) {
+            var ctx = document.getElementById('boundingBoxCanvas').getContext('2d');
+            ctx.clearRect(0, 0, boundingBoxCanvas.width, boundingBoxCanvas.height);
+
+            // Find the corresponding frame annotations
+            var frameAnnotations = annotations[0].tracks.filter(function(track) {
+                return track.frame === frameNumber;
+            });
+
+            // Loop through the bounding boxes for the current frame
+            frameAnnotations.forEach(function(track) {
+                track.shapes.forEach(function(shape) {
+                    if (shape.type === 'rectangle') {
+                        var points = shape.points;
+                        ctx.beginPath();
+                        ctx.strokeStyle = 'red';
+                        ctx.lineWidth = 2;
+                        ctx.rect(points[0], points[1], points[2] - points[0], points[3] - points[1]);
+                        ctx.stroke();
+                    }
+                });
+            });
+        }
+
+        // Add an event listener to the video to draw bounding boxes when the current frame changes
+        document.getElementById('videoPlayer').addEventListener('timeupdate', function() {
+            var frameNumber = Math.floor(this.currentTime * 30); // Assuming 30 frames per second
+            drawBoundingBoxes(frameNumber);
+        });
+
+        // Add function to perform OCR and draw distance value
+        function performOCR(frameNumber) {
+            var frameAnnotations = annotations[0].tracks.filter(function(track) {
+                return track.frame === frameNumber;
+            });
+
+            frameAnnotations.forEach(function(track) {
+                track.shapes.forEach(function(shape) {
+                    if (shape.type === 'rectangle') {
+                        var points = shape.points;
+                        var bounds = [points[0], points[1], points[2] - points[0], points[3] - points[1]];
+
+                        // Perform OCR on the bounding box region and get the distance value
+                        // (Replace this code with the Python OCR code to get the OCR results)
+                        var txt_locs = []; // Replace this with the OCR results for the current frame
+                        var dist_ocr = plot_ocr_frame(frameNumber, txt_locs, bounds);
+
+                        // Draw the distance value on the canvas
+                        var ctx = document.getElementById('boundingBoxCanvas').getContext('2d');
+                        ctx.font = '20px Arial';
+                        ctx.fillStyle = 'blue';
+                        ctx.fillText('Distance: ' + dist_ocr, points[0], points[1] - 20);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

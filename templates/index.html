@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Selection</title>
+</head>
+<body>
+    <h1>Select a Video</h1>
+    <form action="/streamlit" method="GET">
+        <select id="videoDropdown" name="video_file">
+            {% for video_file in video_files %}
+            <option value="{{ video_file }}">{{ video_file }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Play Video">
+    </form>
+
+    <script>
+        // This part of the script is not needed in the index.html page.
+        // The JavaScript code to draw bounding boxes should be placed in the streamlit_video.html page.
+    </script>
+</body>
+</html>
